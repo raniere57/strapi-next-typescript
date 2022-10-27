@@ -6,7 +6,7 @@ export default ({ env }) => {
   if(env('NODE_ENV') === 'production') {
     return {
       connection: {
-        client: 'portgres',
+        client: 'postgres',
         connection: {
           host: config.host,
           port: config.port,
