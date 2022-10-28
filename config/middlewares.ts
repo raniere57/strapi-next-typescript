@@ -32,7 +32,4 @@ export default [
   'strapi::favicon',
   'strapi::public',
 ]
-function env(arg0: string) {
-  throw new Error('Function not implemented.')
-}
 
