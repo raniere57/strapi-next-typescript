@@ -15,7 +15,7 @@ export default [
             'lh3.googleusercontent.com', // google avatars
             'platform-lookaside.fbsbx.com', // facebook avatars
             'dl.airtable.com', // strapi marketplace
-            `https://${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`
+            `https://mystrapiapp.s3.sa-east-1.amazonaws.com`
           ],
           'media-src': ["'self'", 'data:', 'blob:', `https://mystrapiapp.s3.sa-east-1.amazonaws.com`],
           upgradeInsecureRequests: null,
