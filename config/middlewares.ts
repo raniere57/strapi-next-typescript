@@ -7,8 +7,8 @@ export default [
         useDefaults: true,
         directives: {
           'connect-src': ["'self", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'cdn.jsdelivr.net', 'strapi.io', 'mystrapiapp.s3.sa-east-1.amazonaws.com'],
-          'media-src': ["'self'", 'data:', 'blob:', 'cdn.jsdelivr.net', 'strapi.io', 'mystrapiapp.s3.sa-east-1.amazonaws.com'],
+          'img-src': ["'self'", 'data:', 'blob:', 'mystrapiapp.s3.sa-east-1.amazonaws.com'],
+          'media-src': ["'self'", 'data:', 'blob:', 'mystrapiapp.s3.sa-east-1.amazonaws.com'],
           upgradeInsecureRequests: null
         },
       }
