@@ -4,23 +4,11 @@ export default [
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
-        useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
-          'img-src': [
-            "'self'",
-            'data:',
-            'blob:',
-            'res.cloudinary.com', // cloudinary images
-            'lh3.googleusercontent.com', // google avatars
-            'platform-lookaside.fbsbx.com', // facebook avatars
-            'dl.airtable.com', // strapi marketplace
-            `https://mystrapiapp.s3.sa-east-1.amazonaws.com`
-          ],
-          'media-src': ["'self'", 'data:', 'blob:', `https://mystrapiapp.s3.sa-east-1.amazonaws.com`],
-          upgradeInsecureRequests: null,
+          'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
+          'img-src': ["'self'", 'data:', 'cdn.jsdelivr.net', 'strapi.io', 'mystrapiapp.s3.sa-east-1.amazonaws.com'],
         },
-      },
+      }
     },
   },
   'strapi::cors',
