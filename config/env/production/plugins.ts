@@ -5,9 +5,9 @@ export default ({env}) => ({
       providerOptions: {
         accessKeyId: env('AWS_ACCESS_KEY_ID'),
         secretAccessKey: env('AWS_ACCESS_SECRET'),
-        region: 'sa-east-1',
+        region: env('AWS_REGION'),
         params: {
-          Bucket: 'mystrapiapp'
+          Bucket: env('AWS_BUCKET')
         },
       },
     },
